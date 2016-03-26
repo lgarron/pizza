@@ -1,5 +1,7 @@
 # Unexpected behaviour of `go vet -unusedresult`
 
+Filed as a Go bug at <https://github.com/golang/go/issues/14972>
+
 ## Issue Summary
 
 There are 4 functions in `pizza.go` and 4 functions in `string.go` that `go vet` cannot report as an unused result as of [21cc49bd](https://github.com/golang/tools/blob/21cc49bd030cf5c6ebaca2fa0e3323628efed6d8/cmd/vet/unused.go) (March 25, 2016).
